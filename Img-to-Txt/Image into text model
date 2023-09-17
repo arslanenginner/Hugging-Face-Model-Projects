@@ -1,8 +1,0 @@
-import tensorflow                  # import tensorflow library 
-import warnings,logging            # import to ignore futurewarnings
-warnings.simplefilter("ignore")
-logging.disable(logging.WARNING)
-pip install transformers            # import transformer files   
-from transformers import pipeline
-pipe=pipeline("image-to-text",model="microsoft/git-large-coco")     #provide pipeline and model name
-pipe("image path from your computer")
